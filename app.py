@@ -124,7 +124,7 @@ e_model = InceptionResnetV1(pretrained=None)
 # 이 경우, 로드하는 상태 사전의 logits.weight 크기는 [2, 1792]입니다.
 e_model.logits = nn.Linear(1792, num_classes)  # num_classes는 출력 클래스 수입니다.
 # 저장된 상태 사전 로드
-e_model.load_state_dict(torch.load('animal_model_state_dict_re.pth', map_location=device))
+e_model.load_state_dict(torch.load('animal_model_state_dict_final.pth', map_location=device))
 # 모델을 평가 모드로 설정하고 디바이스로 이동
 e_model = e_model.to(device).eval()
 
