@@ -1,0 +1,10 @@
+torch
+Pillow
+torchvision
+flask
+flask_cors
+facenet_pytorch
+lime
+scikit_image
+matplotlib
+numpy
